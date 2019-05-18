@@ -44,12 +44,10 @@ public class FizzBuzzSolution {
                 return result + " deluxe";
             }
             if ( ( check == true ) && ( result == "" ) ) {
-                return result + number + " deluxe";
+                return result + "deluxe";
             }
 
         }
-
-
 
 
         if ( result == "" )
@@ -57,13 +55,6 @@ public class FizzBuzzSolution {
             result = result + number;
         }
 
-
-
         return result;
     }
 }
-
-
-
-
-
