@@ -30,7 +30,8 @@ public class FizzBuzzSolution {
         {
             result = result + number;
         } else {
-            if ( number > 10 && comparisonValue.split(0, ) ) {
+            if ( number > 10 && comparisonValue.substring(0, comparisonValue.length()/2) ==
+                    comparisonValue.substring(comparisonValue.length()/2, comparisonValue.length()) ) {
 
             }
         }
@@ -39,6 +40,7 @@ public class FizzBuzzSolution {
         return result;
     }
 }
+
 
 
 
