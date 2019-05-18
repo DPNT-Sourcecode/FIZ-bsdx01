@@ -6,19 +6,26 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
 
-        if ( (number % 5 == 0) && (number % 3 == 0) ) {
-            return "fizz buzz";
-        }
-        if ( (number % 3 == 0) ) {
-            return "fizz";
-        }
-        if ( (number % 5 == 0) ) {
-            return "buzz";
-        }
         String result = "";
-        result = result + number;
+        String comparisonValue = "";
+        comparisonValue = comparisonValue + number;
+
+        if ( (number % 3 == 0) || comparisonValue.contains("3") ) {
+            result = result + "fizz";
+        }
+
+        if ( (number % 5 == 0) || comparisonValue.contains("5") ) {
+            if ( result == "" ) {
+                result = result + "buzz";
+            } else {
+                result = result + " buzz";
+
+            }
+
+        }
+
 
         return result;
     }
-
 }
+
