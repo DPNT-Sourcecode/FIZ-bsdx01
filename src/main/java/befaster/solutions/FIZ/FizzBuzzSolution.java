@@ -15,14 +15,12 @@ public class FizzBuzzSolution {
         if ( (number % 5 == 0) ) {
             return "buzz";
         }
-
-        String result;
+        String result = "";
         result = result + number;
 
-        return number;
-
-
+        return result;
     }
 
 }
+
 
