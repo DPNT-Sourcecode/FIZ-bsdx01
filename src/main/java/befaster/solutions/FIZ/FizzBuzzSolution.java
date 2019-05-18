@@ -25,21 +25,44 @@ public class FizzBuzzSolution {
         }
 
 
+        if ( number > 10 ) {
+            int testVar;
+            int numCopy = number;
+            testVar = numCopy%10;
+            numCopy = numCopy/10;
+            boolean check = true;
+
+            while ( numCopy != 0 ) {
+                if ( numCopy%10 != testVar ) {
+                    check = false;
+                    break;
+                }
+                numCopy = numCopy/10;
+            }
+
+            if ( ( check == true ) && ( result != "" ) ) {
+                return result + " deluxe";
+            }
+            if ( ( check == true ) && ( result == "" ) ) {
+                return result + number + " deluxe";
+            }
+
+        }
+
+
+
 
         if ( result == "" )
         {
             result = result + number;
-        } else {
-            if ( number > 10 && comparisonValue.substring(0, comparisonValue.length()/2) ==
-                    comparisonValue.substring(comparisonValue.length()/2, comparisonValue.length()) ) {
-
-            }
         }
+
 
 
         return result;
     }
 }
+
 
 
 
