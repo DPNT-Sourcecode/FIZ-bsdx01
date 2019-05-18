@@ -24,14 +24,21 @@ public class FizzBuzzSolution {
 
         }
 
+
+
         if ( result == "" )
         {
             result = result + number;
+        } else {
+            if ( number > 10 && comparisonValue.split(0, ) ) {
+
+            }
         }
 
 
         return result;
     }
 }
+
 
 
