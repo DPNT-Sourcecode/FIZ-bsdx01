@@ -24,8 +24,14 @@ public class FizzBuzzSolution {
 
         }
 
+        if ( result == "" )
+        {
+            result = result + number;
+        }
+
 
         return result;
     }
 }
+
 
