@@ -40,9 +40,20 @@ public class FizzBuzzSolution {
                 numCopy = numCopy/10;
             }
 
+
+            if ( ( check == true ) && ( result != "" ) && ( number % 2 != 0 ) ) {
+                return result + "fake deluxe";
+            }
+
+
+            if ( ( check == true ) && ( result == "" ) && ( number % 2 != 0 ) ) {
+                return result + " fake deluxe";
+            }
+
             if ( ( check == true ) && ( result != "" ) ) {
                 return result + " deluxe";
             }
+
             if ( ( check == true ) && ( result == "" ) ) {
                 return result + "deluxe";
             }
@@ -58,3 +69,4 @@ public class FizzBuzzSolution {
         return result;
     }
 }
+
