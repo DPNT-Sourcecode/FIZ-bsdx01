@@ -42,12 +42,12 @@ public class FizzBuzzSolution {
 
 
             if ( ( check == true ) && ( result != "" ) && ( number % 2 != 0 ) ) {
-                return result + "fake deluxe";
+                return result + " fake deluxe";
             }
 
 
             if ( ( check == true ) && ( result == "" ) && ( number % 2 != 0 ) ) {
-                return result + " fake deluxe";
+                return result + "fake deluxe";
             }
 
             if ( ( check == true ) && ( result != "" ) ) {
@@ -69,4 +69,5 @@ public class FizzBuzzSolution {
         return result;
     }
 }
+
 
