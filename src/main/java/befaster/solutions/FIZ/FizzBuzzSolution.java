@@ -69,5 +69,3 @@ public class FizzBuzzSolution {
         return result;
     }
 }
-
-
