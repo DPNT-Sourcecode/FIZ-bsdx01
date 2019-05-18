@@ -25,40 +25,15 @@ public class FizzBuzzSolution {
         }
 
 
-        if ( number > 10 ) {
-            int testVar;
-            int numCopy = number;
-            testVar = numCopy%10;
-            numCopy = numCopy/10;
-            boolean check = true;
-
-            while ( numCopy != 0 ) {
-                if ( numCopy%10 != testVar ) {
-                    check = false;
-                    break;
-                }
-                numCopy = numCopy/10;
-            }
-
-
-            if ( ( check == true ) && ( result != "" ) && ( number % 2 != 0 ) ) {
-                return result + " fake deluxe";
-            }
-
-
-            if ( ( check == true ) && ( result == "" ) && ( number % 2 != 0 ) ) {
-                return result + "fake deluxe";
-            }
-
-            if ( ( check == true ) && ( result != "" ) ) {
-                return result + " deluxe";
-            }
-
-            if ( ( check == true ) && ( result == "" ) ) {
-                return result + "deluxe";
-            }
-
+        if ( ( result != "" ) && ( number % 2 != 0 ) ) {
+            return result + " fake deluxe";
         }
+
+        if ( ( result != "" ) ) {
+            return result + " deluxe";
+        }
+
+
 
 
         if ( result == "" )
@@ -69,3 +44,4 @@ public class FizzBuzzSolution {
         return result;
     }
 }
+
