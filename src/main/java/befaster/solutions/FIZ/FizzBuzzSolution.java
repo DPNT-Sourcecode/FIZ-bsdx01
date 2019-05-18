@@ -10,11 +10,11 @@ public class FizzBuzzSolution {
         String comparisonValue = "";
         comparisonValue = comparisonValue + number;
 
-        if ( (number % 3 == 0) && comparisonValue.contains("3") ) {
+        if ( (number % 3 == 0) || comparisonValue.contains("3") ) {
             result = result + "fizz";
         }
 
-        if ( (number % 5 == 0) && comparisonValue.contains("5") ) {
+        if ( (number % 5 == 0) || comparisonValue.contains("5") ) {
             if ( result == "" ) {
                 result = result + "buzz";
             } else {
@@ -25,15 +25,16 @@ public class FizzBuzzSolution {
         }
 
 
-        if ( ( result != "" ) && ( number % 2 != 0 ) ) {
-            return result + " fake deluxe";
+        if ( ((number % 3 == 0) && comparisonValue.contains("3")) || ((number % 5 == 0) && comparisonValue.contains("5")) ) {
+            if ((result != "") && (number % 2 != 0)) {
+                return result + " fake deluxe";
+            }
+
+            if ((result != "")) {
+                return result + " deluxe";
+            }
+
         }
-
-        if ( ( result != "" ) ) {
-            return result + " deluxe";
-        }
-
-
 
 
         if ( result == "" )
@@ -44,5 +45,6 @@ public class FizzBuzzSolution {
         return result;
     }
 }
+
 
 
